@@ -36,8 +36,22 @@ header .menu {
   height: 100%;
   font-size: 20px;
 }
-header .menu li {
+header .menu a {
+  color: #F3F4F6;
+  text-decoration: none;
   cursor: pointer;
+}
+header .menu ::after {
+  margin-top: 5px;
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #F3F4F6;
+  transition: 0.3s ease-in-out;
+}
+header .menu a:hover:after {
+  width: 100%;
 }
 header .icons {
   width: 20%;
@@ -48,9 +62,13 @@ header .icons {
   display: flex;
   height: 100%;
   margin-left: 10px;
+  transition: linear 1s ease-in-out;
 }
 header .icons i {
   cursor: pointer;
+}
+header .icons i:hover {
+  transform: scale(1.5);
 }
 
 main {
@@ -300,6 +318,9 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+footer img {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
