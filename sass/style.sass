@@ -28,6 +28,7 @@ header
         align-items: center
     .logo
         display: flex
+        justify-content: center
         align-items: center
         height: 100%
         width: 20%
@@ -36,12 +37,17 @@ header
             text-decoration: none
             color: inherit
     .menu
+        padding-top: 10px
         width: 40%
         display: flex
         align-items: center
         justify-content: space-around
         height: 100%
         font-size: 20px
+        li
+            display: flex
+            justify-content: center
+            align-items: center
         a
             color: $white
             text-decoration: none
@@ -56,6 +62,18 @@ header
             transition: 0.3s ease-in-out
         a:hover:after
             width: 100%
+        .sub-menu
+            display: none
+            border-radius: 0 0 10px 10px
+            padding: 20px
+            font-size: 14px
+            position: absolute
+            margin-top: 225px
+            background-color: $super-white
+            color: $grey
+            li
+                padding: 5px
+                cursor: pointer
 
     .icons
         width: 20%
@@ -66,15 +84,52 @@ header
         display: flex
         height: 100%
         margin-left: 10px
-        transition: linear 1s ease-in-out
-        i
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 10px
+            width: 100%
+            transition: 60ms ease-in
             cursor: pointer
-        i:hover
+        li:hover
             transform: scale(1.5)
-            
+
 main
     display: flex
     flex-direction: column
+    .former
+        display: none
+        position: absolute
+        right: 20.5%
+        top: 7%
+        padding: 0
+        margin: 0
+        input
+            margin-right: -46px
+            border-radius: 10px
+            content: ""
+            padding-left: 15px
+            color: $black
+            background-color: $super-white
+            border: none
+            height: 43px
+            width: 270px
+        ::placeholder
+            text-decoration: none
+            appearance: none
+            color: $black
+            font-size: 18px
+            font-weight: bold
+        button
+            cursor: pointer
+            border-radius: 10px
+            width: 42px
+            height: 45px
+            border: none
+            color: $super-white
+            background-color: $green
+
     .banner
         background-image: url("/assets/Banner.png")
         background-position: center left
@@ -86,22 +141,24 @@ main
         align-items: center
         justify-content: center
         width: 100%
-    .cards
-        margin-top: -267px
-        display: flex
-        flex-direction: row
-        justify-content: center
-        align-items: center
+        height: 100%
+    .owl-carousel
+        margin-top: -250px
+        width: 64%
+        height: 105%
+    .owl-nav
+        display: none
+    .item
+        margin-left: 15px
     .card
-        margin: 20px
-        background-color: red
+        cursor: grab
         border-top-left-radius: 4%
         border-top-right-radius: 4%
         display: flex
         flex-direction: column
         border-radius: 4%
         width: 369px
-        height: 411px
+        height: 420px
         background-color: $white
         box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.18)
         -webkit-box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.18)
@@ -214,29 +271,30 @@ main
         display: flex
         flex-direction: row
         justify-content: flex-start
-        li
-            padding-right: 82px
+        label
+            cursor: pointer
+            margin-right: 82px
+        input
+            display: none
 
     .audiovisual-content
+        background-color: transparent
         margin-top: 57px
-        width: 1561px
+        display: grid
         height: 610px
-        display: flex
-        .parts
-            overflow: hidden
-            padding: 0px 20px
-        .divisor
-            height: 20px
-        .part2
-            display: grid
-            grid-template-columns: 1fr 1fr
-            grid-template-rows: 1fr 1fr
-            overflow: hidden
-            grid-row-gap: 150px
-            grid-column-gap: 120px
-            img
-                min-width: 100%
-                min-height: 100%
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        gap: 20px 20px
+        justify-items: end
+        align-items: end
+        .item
+            background-color: transparent
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+        #video:hover
+            opacity: 0.5
 
 .newsletter
     background-color: $white

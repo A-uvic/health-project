@@ -19,6 +19,7 @@ header .navbar {
 }
 header .logo {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100%;
   width: 20%;
@@ -29,12 +30,18 @@ header .logo a {
   color: inherit;
 }
 header .menu {
+  padding-top: 10px;
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 100%;
   font-size: 20px;
+}
+header .menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .menu a {
   color: #F3F4F6;
@@ -53,6 +60,20 @@ header .menu ::after {
 header .menu a:hover:after {
   width: 100%;
 }
+header .menu .sub-menu {
+  display: none;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  font-size: 14px;
+  position: absolute;
+  margin-top: 225px;
+  background-color: #FFFFFF;
+  color: #707070;
+}
+header .menu .sub-menu li {
+  padding: 5px;
+  cursor: pointer;
+}
 header .icons {
   width: 20%;
   display: flex;
@@ -62,18 +83,58 @@ header .icons {
   display: flex;
   height: 100%;
   margin-left: 10px;
-  transition: linear 1s ease-in-out;
 }
-header .icons i {
+header .icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  transition: 60ms ease-in;
   cursor: pointer;
 }
-header .icons i:hover {
+header .icons li:hover {
   transform: scale(1.5);
 }
 
 main {
   display: flex;
   flex-direction: column;
+}
+main .former {
+  display: none;
+  position: absolute;
+  right: 20.5%;
+  top: 7%;
+  padding: 0;
+  margin: 0;
+}
+main .former input {
+  margin-right: -46px;
+  border-radius: 10px;
+  content: "";
+  padding-left: 15px;
+  color: #2F2F2F;
+  background-color: #FFFFFF;
+  border: none;
+  height: 43px;
+  width: 270px;
+}
+main .former ::placeholder {
+  text-decoration: none;
+  appearance: none;
+  color: #2F2F2F;
+  font-size: 18px;
+  font-weight: bold;
+}
+main .former button {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 42px;
+  height: 45px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #01DA96;
 }
 main .banner {
   background-image: url("/assets/Banner.png");
@@ -86,24 +147,28 @@ main .carrousel {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100%;
 }
-main .cards {
-  margin-top: -267px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+main .owl-carousel {
+  margin-top: -250px;
+  width: 64%;
+  height: 105%;
+}
+main .owl-nav {
+  display: none;
+}
+main .item {
+  margin-left: 15px;
 }
 main .card {
-  margin: 20px;
-  background-color: red;
+  cursor: grab;
   border-top-left-radius: 4%;
   border-top-right-radius: 4%;
   display: flex;
   flex-direction: column;
   border-radius: 4%;
   width: 369px;
-  height: 411px;
+  height: 420px;
   background-color: #F3F4F6;
   box-shadow: 2px 4px 15px 3px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: 2px 4px 15px 3px rgba(0, 0, 0, 0.18);
@@ -229,33 +294,33 @@ main .btn-card {
   flex-direction: row;
   justify-content: flex-start;
 }
-.audiovisual .audiovisual-menu li {
-  padding-right: 82px;
+.audiovisual .audiovisual-menu label {
+  cursor: pointer;
+  margin-right: 82px;
+}
+.audiovisual .audiovisual-menu input {
+  display: none;
 }
 .audiovisual .audiovisual-content {
+  background-color: transparent;
   margin-top: 57px;
-  width: 1561px;
-  height: 610px;
-  display: flex;
-}
-.audiovisual .audiovisual-content .parts {
-  overflow: hidden;
-  padding: 0px 20px;
-}
-.audiovisual .audiovisual-content .divisor {
-  height: 20px;
-}
-.audiovisual .audiovisual-content .part2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  height: 610px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  overflow: hidden;
-  grid-row-gap: 150px;
-  grid-column-gap: 120px;
+  gap: 20px 20px;
+  justify-items: end;
+  align-items: end;
 }
-.audiovisual .audiovisual-content .part2 img {
-  min-width: 100%;
-  min-height: 100%;
+.audiovisual .audiovisual-content .item {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.audiovisual .audiovisual-content #video:hover {
+  opacity: 0.5;
 }
 
 .newsletter {

@@ -5,7 +5,7 @@
     <!-- Metas -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- Owl Carrousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Teste - Vaga Estágio Front end</title>
 </head>
 
@@ -27,15 +34,22 @@
             <div class="logo">
                 <a href="/">Company Name</a>
             </div>
-            <div class="menu">
-                <a href="#">Sobre</a>
-                <a href="#">Releases</a>
-                <a href="#">Audiovisual</a>
-                <a href="#">Saiu na Mídia</a>
-                <a href="#">Contato</a>
-            </div>
+            <ul class="menu">
+                <li><a href="#">Sobre</a></li>
+                <li id="sub-menu-start"><a onclick=showMenu() href="#">Releases</a>
+                    <ul id="sub-menu" class="sub-menu">
+                        <li>sub-canal-1</li>
+                        <li>sub-canal-2</li>
+                        <li>sub-canal-3</li>
+                        <li>sub-canal-4</li>
+                    </ul>
+                </li>
+                <li><a href="#">Audiovisual</a></li>
+                <li><a href="#">Saiu na Mídia</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
             <ul class="icons">
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li onclick=showSearchBar()><i class="fa-solid fa-magnifying-glass"></i></li>
                 <li><i class="fa-solid fa-globe"></i></li>
                 <li><i class="fa-brands fa-facebook-f"></i></li>
                 <li><i class="fab fa-linkedin-in"></i></li>
@@ -44,45 +58,69 @@
         </div>
     </header>
     <main>
+        <div id="form" class="former">
+            <input placeholder="Digite sua busca" type="text">
+            <button>OK</button>
+        </div>
         <div class="banner">
         </div>
         <div class="carrousel">
-            <div class="btn-card left">
+            <div class="btn-card-left btn-card">
                 <i class="fa-solid fa-arrow-left"></i>
             </div>
-            <div class="cards">
-                <div class="card">
+            <div class="owl-carousel owl-theme">
+                <div class="item card">
                     <div class="card-content">
-                        <h3 class="card-date">23 de junho de 2018 </h3>
-                        <h1 class="card-title">Resgate Saúde Resgate Saúde</h1>
-                        <p class="card-description">Com cobertura em todo o território nacional, possui a mais moderna
-                            estrutura</p>
+                        <h3 class="card-date">23 de junho de 2022 </h3>
+                        <h1 class="card-title">Resgate Saúde</h1>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                            officia at ad, iure eaque non aperiam voluptatem accusamus repudiandae! Ex?</p>
                     </div>
                     <div class="card-img">
                     </div>
                 </div>
-                <div class="card">
+                <div class="item card">
                     <div class="card-content">
-                        <h3 class="card-date">23 de junho de 2018 </h3>
-                        <h1 class="card-title">Resgate Saúde Resgate Saúde</h1>
-                        <p class="card-description">Com cobertura em todo o território nacional, possui a mais moderna
-                            estrutura</p>
+                        <h3 class="card-date">21 de março de 2018 </h3>
+                        <h1 class="card-title">Seja Feliz</h1>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                            nesciunt.</p>
                     </div>
                     <div class="card-img">
                     </div>
                 </div>
-                <div class="card">
+                <div class="item card">
                     <div class="card-content">
-                        <h3 class="card-date">23 de junho de 2018 </h3>
-                        <h1 class="card-title">Resgate Saúde Resgate Saúde</h1>
-                        <p class="card-description">Com cobertura em todo o território nacional, possui a mais moderna
-                            estrutura</p>
+                        <h3 class="card-date">21 de março de 2018 </h3>
+                        <h1 class="card-title">Seja Feliz</h1>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                            nesciunt.</p>
+                    </div>
+                    <div class="card-img">
+                    </div>
+                </div>
+                <div class="item card">
+                    <div class="card-content">
+                        <h3 class="card-date">21 de março de 2018 </h3>
+                        <h1 class="card-title">Seja Feliz</h1>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                            nesciunt.</p>
+                    </div>
+                    <div class="card-img">
+                    </div>
+                </div>
+                <div class="item card">
+                    <div class="card-content">
+                        <h3 class="card-date">20 de abril de 2019 </h3>
+                        <h1 class="card-title">Melhores escolhas</h1>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Consequuntur esse, nesciunt pariatur dolor sed ad.</p>
                     </div>
                     <div class="card-img">
                     </div>
                 </div>
             </div>
-            <div class="btn-card right">
+            <div class="btn-card-right btn-card">
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
         </div>
@@ -94,29 +132,22 @@
                 <h1>Audiovisual</h1>
             </div>
             <div class="audiovisual">
-                <ul class="audiovisual-menu">
-                    <li><input type="checkbox" name="Imagens" id="Img">Imagens</li>
-                    <li><input type="checkbox" name="Videos" id="Videos">Videos</li>
-                    <li><input type="checkbox" name="Info" id="Info">Infográficos</li>
-                    <li><input type="checkbox" name="Todos" id="All">Todos</li>
-                </ul>
-                <div class="audiovisual-content">
-                    <div class="parts part1">
-                        <img src="assets/Picture1.PNG" alt="">
-                        <div class="divisor"></div>
-                        <img src="assets/Video1.PNG" alt="">
-                    </div>
-                    <div class="parts part2">
-                        <img src="assets/Video2.PNG" alt="">
-                        <img src="assets/Video3.PNG" alt="">
-                        <img src="assets/Picture2.PNG" alt="">
-                        <img src="assets/Picture3.PNG" alt="">
-                    </div>
-                    <div class="parts part3">
-                        <img src="assets/Picture4.PNG" alt="">
-                        <div class="divisor"></div>
-                        <img src="assets/Video4.PNG" alt="">
-                    </div>
+                <div id="audiovisual-menu" class="audiovisual-menu">
+                    <label class="label" id="Img"><input class="checkbox" type="radio" value="Img">Imagens</label>
+                    <label class="label" id="Video"><input class="checkbox" type="radio" value="Video">Videos</label>
+                    <label class="label" id="Info"><input class="checkbox" type="radio"
+                            value="Info">Infográficos</label>
+                    <label class="label" id="All"><input class="checkbox" type="radio" value="All">Todos</label>
+                </div>
+                <div id="audiovisual-content" class="audiovisual-content">
+                    <div class="item" id="picture"><img src="assets/Picture1.PNG" alt=""></div>
+                    <div class="item" id="video"><img src="assets/Video1.PNG" alt=""></div>
+                    <div class="item" id="video"><img src="assets/Video2.PNG" alt=""></div>
+                    <div class="item" id="info"><img src="assets/Info.PNG" alt=""></div>
+                    <div class="item" id="video"><img src="assets/Video3.PNG" alt=""></div>
+                    <div class="item" id="picture"><img src="assets/Picture2.PNG" alt=""></div>
+                    <div class="item" id="picture"><img src="assets/Picture3.PNG" alt=""></div>
+                    <div class="item" id="video"><img src="assets/Video4.PNG" alt=""></div>
                 </div>
                 <button class="grey-btn">Ver Todos</button>
             </div>
@@ -126,7 +157,7 @@
                 <h1>Receba Nossos Comunicados</h1>
             </div>
             <div class="form">
-                <div class="name">
+                <div class="id">
                     <p>Nome</p>
                     <input type="text">
                 </div>
@@ -139,10 +170,20 @@
         </div>
     </main>
     <footer>
-        <h1>Company Name 2019 - Todos os direitos reservados</h1>
+        <h1>Company id 2019 - Todos os direitos reservados</h1>
         <img src="assets/Final-logo.svg" alt="Footer logo">
     </footer>
 
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Owl Carrousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- App -->
+    <script src="app.js"></script>
 </body>
 
 </html>
