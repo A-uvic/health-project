@@ -140,7 +140,7 @@ main .form1 button {
   background-color: #01DA96;
 }
 main .banner {
-  background-image: url("../assets/Banner.PNG");
+  background-image: url("./assets/Banner.PNG");
   background-position: center left;
   background-repeat: no-repeat;
   height: 528px;
@@ -199,7 +199,7 @@ main .card-content .card-description {
 main .card-img {
   border-bottom-left-radius: 4%;
   border-bottom-right-radius: 4%;
-  background: url("../assets/Card-img.PNG");
+  background: url("./assets/Card-img.PNG");
   background-position: center center;
   background-repeat: no-repeat;
   height: 40%;
