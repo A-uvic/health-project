@@ -6,5 +6,5 @@ Foi utilizado sass, jquery e js puro.
 
 ## Como testar?
 
-Você pode testar o projeto clicando [aqui]( https://a-uvic.github.io/health-project/)!
+Você pode testar o projeto clicando [aqui]!( https://a-uvic.github.io/health-project/)!
 
