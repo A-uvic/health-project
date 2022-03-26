@@ -1,6 +1,10 @@
-# Projeto criado para vaga de estágio.
-Projeto teste para vaga de estágio (front end)
+# Projeto Vaga de Estágio front-end - ()
+Projeto teste para processo seletivo, projeto finalizado dia 26/03/2022 - as 14:54
+
+Foi utilizado sass, jquery e js puro.
 
 
-MQ
-1318
+## Como testar?
+
+Você pode testar o projeto clicando [aqui]( https://a-uvic.github.io/health-project/)!
+
