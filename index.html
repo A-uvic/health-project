@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -50,21 +51,23 @@
             </ul>
             <ul class="icons">
                 <li onclick=showSearchBar()><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li><i class="fa-solid fa-globe"></i></li>
-                <li><i class="fa-brands fa-facebook-f"></i></li>
-                <li><i class="fab fa-linkedin-in"></i></li>
-                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><a target="new_blank" href="https://www.linkedin.com/in/victor-martins-t/"><i class="fa-solid fa-globe"></i></a></li>
+                <li><a target="new_blank" href="https://www.linkedin.com/in/victor-martins-t/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a target="new_blank" href="https://www.linkedin.com/in/victor-martins-t/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a target="new_blank" href="https://www.linkedin.com/in/victor-martins-t/"><i class="fa-brands fa-youtube"></i></a></li>
             </ul>
         </div>
     </header>
     <main>
-        <div id="form" class="former">
-            <input placeholder="Digite sua busca" type="text">
-            <button>OK</button>
+        <div class="form1-container">
+            <div id="form" class="form1">
+                <input placeholder="Digite sua busca" type="text">
+                <button>OK</button>
+            </div>
         </div>
         <div class="banner">
         </div>
-        <div class="carrousel">
+        <div class="carousel">
             <div class="btn-card-left btn-card">
                 <i class="fa-solid fa-arrow-left"></i>
             </div>
@@ -184,6 +187,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- App -->
     <script src="app.js"></script>
+    <script src="owl-carousel.js"></script>
 </body>
 
 </html>

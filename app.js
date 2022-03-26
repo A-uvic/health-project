@@ -1,7 +1,7 @@
 //Global variables
 const checkBtns = document.getElementById("audiovisual-menu");
 const getOptions = document.getElementsByClassName("checkbox");
-const getLabel = document.getElementsByClassName ("label");
+const getLabel = document.getElementsByClassName("label");
 
 
 //Event listeners
@@ -66,8 +66,8 @@ const uncheck = () => {
             getOptions[i].checked = false;
         };
     };
-    for(let i = 0; i < getLabel.length; i++) {
-        if (getLabel[i].style.textDecoration == "underline"){
+    for (let i = 0; i < getLabel.length; i++) {
+        if (getLabel[i].style.textDecoration == "underline") {
             getLabel[i].style.textDecoration = "none";
         };
     };
@@ -87,7 +87,7 @@ const showMenu = () => {
 const showSearchBar = () => {
     const subSearch = document.getElementById("form");
     if (subSearch.style.display == "none" || subSearch.style.display == "") {
-        subSearch.style.display = "block";
+        subSearch.style.display = "flex";
     } else {
         subSearch.style.display = "none";
     };
@@ -97,35 +97,3 @@ const showSearchBar = () => {
 const underlineSelectedTxt = (text) => {
     document.getElementById(text).style.textDecoration = "underline";
 }
-
-
-$('.owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:true,
-    center:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        1166:{
-            items:2
-        },
-        1724:{
-            items:3
-        }
-    }
-})
-
-var owl = $('.owl-carousel');
-owl.owlCarousel();
-// Go to the next item
-$('.btn-card-right').click(function() {
-    owl.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('.btn-card-left').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
-})

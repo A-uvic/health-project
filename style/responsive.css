@@ -1,0 +1,207 @@
+@media (max-width: 1766px) {
+    main .card {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1454px) {
+    main .card {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1400px) {
+    main .audiovisual-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1304px) {
+    header {
+        height: 200px;
+    }
+
+    header .navbar {
+        color: #f3f4f6;
+        justify-content: space-between;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar .menu {
+        font-size: 15px;
+    }
+    .navbar .menu .sub-menu {
+        margin-top: 190px;
+    }
+    main .btn-card {
+        margin-top: 0;
+    }
+
+    main .form1 {
+        width: 100%;
+        background-color: #461bff;
+        display: none;
+        position: initial;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0 5px 0;
+        margin: 0;
+    }
+    .form1 button {
+        margin: 0;
+        padding: 0;
+    }
+
+    main .owl-carousel {
+        margin-top: 20px;
+    }
+
+    main > .grey-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        height: 100%;
+    }
+    .audiovisual {
+        height: 100%;
+    }
+    .audiovisual .audiovisual-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .audiovisual .audiovisual-menu label {
+        cursor: pointer;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .audiovisual .audiovisual-content {
+        margin-top: 57px;
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        justify-items: center;
+    }
+    .audiovisual .audiovisual-content .item {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1291px) {
+    main .owl-carousel {
+        width: 100%;
+    }
+    main .card {
+        width: 300px;
+        height: 450px;
+    }
+    main .carousel .btn-card {
+        display: none;
+    }
+}
+
+@media (max-width: 1211px) {
+    header .logo a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1085px) {
+    main .newsletter {
+        height: 100%;
+        display: flex;
+    }
+    main .newsletter .n-title {
+        font-weight: bold;
+        color: #01da96;
+        font-size: 40px;
+        margin-top: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main .newsletter .form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .newsletter .form p {
+        margin-left: 0;
+    }
+    main .newsletter .form input {
+        width: 369.38px;
+        height: 53px;
+    }
+}
+
+@media (max-width: 919px) {
+    header .navbar .menu {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 803px) {
+    header .logo {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 671px) {
+    .audiovisual .audiovisual-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (max-width: 623px) {
+    main .card {
+        width: 250px;
+        height: 350px;
+    }
+}
+@media (max-width: 509px) {
+    main .card {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 557px) {
+    .newsletter .form {
+        margin-top: 46px;
+        display: flex;
+    }
+    .newsletter .form p {
+        width: 100%;
+        height: 100%;
+    }
+    .newsletter .form .id {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletter .form .id input {
+        width: 100%;
+    }
+    .newsletter .form .e-mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletter .form .e-mail input {
+        width: 100%;
+    }
+}

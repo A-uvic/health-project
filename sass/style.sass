@@ -92,13 +92,16 @@ header
             width: 100%
             transition: 60ms ease-in
             cursor: pointer
+        a
+            text-decoration: none
+            color: $white
         li:hover
             transform: scale(1.5)
 
 main
     display: flex
     flex-direction: column
-    .former
+    .form1
         display: none
         position: absolute
         right: 20.5%
@@ -106,8 +109,7 @@ main
         padding: 0
         margin: 0
         input
-            margin-right: -46px
-            border-radius: 10px
+            border-radius: 5px 0 0 5px
             content: ""
             padding-left: 15px
             color: $black
@@ -122,8 +124,8 @@ main
             font-size: 18px
             font-weight: bold
         button
+            border-radius: 0px 5px 5px 0px
             cursor: pointer
-            border-radius: 10px
             width: 42px
             height: 45px
             border: none
@@ -136,7 +138,7 @@ main
         background-repeat: no-repeat
         height: 528px
 
-    .carrousel
+    .carousel
         display: flex
         align-items: center
         justify-content: center
@@ -148,8 +150,6 @@ main
         height: 105%
     .owl-nav
         display: none
-    .item
-        margin-left: 15px
     .card
         cursor: grab
         border-top-left-radius: 4%
@@ -202,6 +202,8 @@ main
         border-radius: 50%
         box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.18)
         -webkit-box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.18)
+    .btn-card-left
+        margin-right: 20px
 
 .grey-btn
     margin-top: 20px

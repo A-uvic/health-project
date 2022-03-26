@@ -93,6 +93,10 @@ header .icons li {
   transition: 60ms ease-in;
   cursor: pointer;
 }
+header .icons a {
+  text-decoration: none;
+  color: #F3F4F6;
+}
 header .icons li:hover {
   transform: scale(1.5);
 }
@@ -101,7 +105,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-main .former {
+main .form1 {
   display: none;
   position: absolute;
   right: 20.5%;
@@ -109,9 +113,8 @@ main .former {
   padding: 0;
   margin: 0;
 }
-main .former input {
-  margin-right: -46px;
-  border-radius: 10px;
+main .form1 input {
+  border-radius: 5px 0 0 5px;
   content: "";
   padding-left: 15px;
   color: #2F2F2F;
@@ -120,16 +123,16 @@ main .former input {
   height: 43px;
   width: 270px;
 }
-main .former ::placeholder {
+main .form1 ::placeholder {
   text-decoration: none;
   appearance: none;
   color: #2F2F2F;
   font-size: 18px;
   font-weight: bold;
 }
-main .former button {
+main .form1 button {
+  border-radius: 0px 5px 5px 0px;
   cursor: pointer;
-  border-radius: 10px;
   width: 42px;
   height: 45px;
   border: none;
@@ -142,7 +145,7 @@ main .banner {
   background-repeat: no-repeat;
   height: 528px;
 }
-main .carrousel {
+main .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,9 +159,6 @@ main .owl-carousel {
 }
 main .owl-nav {
   display: none;
-}
-main .item {
-  margin-left: 15px;
 }
 main .card {
   cursor: grab;
@@ -217,6 +217,9 @@ main .btn-card {
   border-radius: 50%;
   box-shadow: 2px 4px 15px 3px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: 2px 4px 15px 3px rgba(0, 0, 0, 0.18);
+}
+main .btn-card-left {
+  margin-right: 20px;
 }
 
 .grey-btn {
