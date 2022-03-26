@@ -308,15 +308,9 @@ main .btn-card {
   height: 610px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px 20px;
-  justify-items: end;
-  align-items: end;
 }
 .audiovisual .audiovisual-content .item {
   background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 }
 .audiovisual .audiovisual-content #video:hover {
