@@ -1,7 +1,7 @@
 # Projeto Vaga de Estágio front-end
 Projeto teste para processo seletivo, projeto finalizado dia 26/03/2022 - as 14:54
 
-Foi utilizado sass, jquery e js puro.
+Foi utilizado sass, jquery e js.
 
 
 
@@ -14,4 +14,10 @@ O Desafio do projeto era recriar uma landing page criada no Adobe XD com todas a
 
 ## Demonstração
 
-Você pode testar o projeto [Aqui](https://a-uvic.github.io/health-project/)!
+**Imagem do projeto para visualização**
+
+![](./demo/screenshot-health-project-intern.netlify.app-2022.04.27-21_25_12.png)
+
+## Como acessar?
+
+Você pode testar o projeto [Aqui](https://health-project-intern.netlify.app/)!
