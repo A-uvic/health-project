@@ -14,7 +14,8 @@ O Desafio do projeto era recriar uma landing page criada no Adobe XD com todas a
 
 ## Demonstração
 
-**Imagem do projeto para visualização**
+*Imagem do projeto para visualização*
+
 
 ![](./demo/screenshot-health-project-intern.netlify.app-2022.04.27-21_25_12.png)
 
